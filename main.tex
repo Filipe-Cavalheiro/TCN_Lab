@@ -23,8 +23,8 @@
     \fancyhead[L]{
         \includegraphics[scale = 0.03]{Images/NovaFctHor.png}
     } % Left of Head note
-    \fancyhead[R]{\footnotesize Cadeira} % Right of Head note
-    \fancyfoot[L]{\footnotesize LEEC} % Left of Footnote
+    \fancyhead[R]{\footnotesize TcN} % Right of Head note
+    \fancyfoot[L]{\footnotesize MEEC} % Left of Footnote
     \fancyfoot[R]{\thepage  } % Center of Footnote
     %\fancyfoot[R]{\footnotesize Degree} % Right of Footnote
     \renewcommand{\footrulewidth}{0.4pt} % Footnote rule
@@ -110,6 +110,9 @@
 \definecolor{novablue}{RGB}{0, 101, 189}
 \definecolor{dkgreen}{RGB}{52,129,65}
 
+% my imports 
+\usepackage{comment} %to be able to comment lots of text
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                 Document                             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -127,10 +130,10 @@
     \end{figure}
 
     \mbox{}\\[2.0cm]
-    \textsc{\Huge Curso}\\[2.5cm]
-    \textsc{\LARGE Cadeira}\\[2.0cm]
+    \textsc{\Huge Eng. Eletrotecnica e de computadores}\\[2.5cm]
+    \textsc{\LARGE Tecnologias de Controlo}\\[2.0cm]
     \HRule\\[0.4cm]
-    {\large \bf {Title -- Report Template Martim c: } [\texttt{EN}]}\\[0.2cm]
+    {\large \bf {Report of laboratory work} [\texttt{EN}]}\\[0.2cm]
     \HRule\\[1.5cm]
 \end{center}
 
@@ -141,16 +144,14 @@
 \begin{center}
     \begin{minipage}{0.5\textwidth}
         \begin{flushleft}
-            Martim Duarte Agostinho (70392)\\
-            Lorem Ipsum (\texttt{StudentID} $\in \mathbb{Z}^+$)\\
-            Lorem Ipsum (\texttt{StudentId} $\in \mathbb{Z}^+$)
+            Filipe Cavalheiro (70119)\\
+            Antonio Canteiro (\texttt{StudentID} $\in \mathbb{Z}^+$)
         \end{flushleft}
     \end{minipage}%
     \begin{minipage}{0.5\textwidth}
         \begin{flushright}
-            \href{mailto:md.agostinho@campus.fct.unl.pt}{\texttt{md.agostinho@campus.fct.unl.pt}}\\
+            \href{mailto:fs.cavalheiro@campus.fct.unl.pt}{\texttt{fs.cavalheiro@campus.fct.unl.pt}}\\
             \href{mailto:lorem.ipsum@campus.fct.unl.pt}{\texttt{lorem.ipsum@campus.fct.unl.pt}}\\
-            \href{mailto:lorem.ipsum@campus.fct.unl.pt}{\texttt{lorem.ipsum@campus.fct.unl.pt}}
         \end{flushright}
     \end{minipage}
 \end{center}
@@ -163,7 +164,7 @@
 \vspace{6cm}
 
 \begin{center}
-    \large \bf 2023/2024 -- \nth{2} Semester, P4
+    \large \bf 2024/2025 -- \nth{2} Semester
 \end{center}
 
 \thispagestyle{empty}
@@ -182,11 +183,14 @@
 
 \newpage
 
-\subfile{Sections/Templates.tex}
 
+\subfile{Sections/Lab1.tex}
+
+\begin{comment}
 Referece like this\textsuperscript{\cite{ESP32-datasheet}}
 
 \newpage
-\bibliography{references}
+\bibliography{references}  
+\end{comment}
 
 \end{document}
