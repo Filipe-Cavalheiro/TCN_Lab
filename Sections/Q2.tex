@@ -22,18 +22,9 @@ responsiveness, and process reliability.
 \subsection{Grafcet Representation} \label{sec:Grafcet_Representation}
 
 \begin{figure}[H]
-    \includegraphics[width=16cm]{Images/Q2/grafset_simple.png}
+    \includegraphics[width=16cm]{Images/Q2/grafset.png}
     \centering
-    \caption{Grafset for the door control}
-    \label{fig:grafset_simple}
-\end{figure}
-
-The second model is a more complex grafset representing the real actuators/contactos mechanism
-
-\begin{figure}[H]
-    \includegraphics[width=16cm]{Images/Q2/grafset_complex.png}
-    \centering
-    \caption{Grafset for the door control}
+    \caption{Grafset for industrial plant motor}
     \label{fig:grafset_complex}
 \end{figure}
 
@@ -42,7 +33,7 @@ The second model is a more complex grafset representing the real actuators/conta
 \begin{figure}[H]
     \includegraphics[width=16cm]{Images/Q2/eletrical_circuit.png}
     \centering
-    \caption{Decided schematic for the door control}
+    \caption{Eletrical circuit of industrial plant motor}
     \label{fig:eletrical_circuit}
 \end{figure}
 
@@ -72,23 +63,12 @@ The second model is a more complex grafset representing the real actuators/conta
 
 \subsection{Simulation and Validation} \label{sec:Simulation_and_Validation}
 
-The final stage involves simulating the closed-loop control system in Fluidism 3.6 software. 
-The simulation tests the interaction between the automation process, sensors, and actuators, 
-validating whether the system meets the defined specifications. Any deviations are analyzed, 
-and necessary modifications are proposed to optimize system performance.
-
 \begin{figure}[H]
     \includegraphics[width=16cm]{Images/Q2/fluidsim.png}
     \centering
     \caption{Fluidsim for the motor control}
     \label{fig:fluidsim}
 \end{figure}
-
-The complete implementation of the control system in FluidSim 3.6 is shown here. The design includes two OR gates, 
-allowing both control buttons to be used as needed. The emergency buttons (one pneumatic and one electropneumatic) 
-are also visible. Due to software constraints, the circuit controlling the light and buzzer had to be duplicated, as 
-each pneumatic-to-electrical converter could only be connected to a single differential pressure switch—one for the 
-opening motion and another for closing.\\
 
 \subsection{Conclusion}
 
