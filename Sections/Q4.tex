@@ -22,11 +22,19 @@ The exercise reinforces critical concepts in industrial control, including the i
 mechanisms, timed operations, and the coordination of electrical and pneumatic components within an 
 automated process.
 
-\subsection{Grafcet Representation} \label{sec:Grafcet_Representation}
+\subsection{Process Schematic and Sensor-Actuator Integration} \label{sec:Process_Schematic_and_Sensor-Actuator_Integration}
 
-A structured graphical representation of the automation sequence is developed using the 
-Grafcet method. This step-by-step graphical model illustrates the transitions between 
-different states of the system, ensuring a clear understanding of the control logic.
+\begin{comment}
+    NOTA: ACRESCENTAR A FIGURA
+    \begin{figure}[H]
+    \includegraphics[width=16cm]{Images/Q2/eletrical_circuit.png}
+    \centering
+    \caption{Decided schematic for the door control}
+    \label{fig:eletrical_circuit}
+\end{figure}
+\end{comment}
+
+\subsection{Grafcet Representation} \label{sec:Grafcet_Representation}
 
 \begin{figure}[H]
     \includegraphics[width=16cm]{Images/Q4/graftset.png}
@@ -35,16 +43,7 @@ different states of the system, ensuring a clear understanding of the control lo
     \label{fig:grafset}
 \end{figure}
 
-The Grafcet diagram presents a structured graphical representation of the automation sequence. It clearly defines 
-the different states and transitions of the system, offering an intuitive 
-understanding of how the automation logic operates based on the control loop described in Section \ref{sec:Control_Loop_Architecture}.
-
 \subsection{Simulation and Validation} \label{sec:Simulation_and_Validation}
-
-The final stage involves simulating the closed-loop control system in Fluidism 3.6 software. 
-The simulation tests the interaction between the automation process, sensors, and actuators, 
-validating whether the system meets the defined specifications. Any deviations are analyzed, 
-and necessary modifications are proposed to optimize system performance.
 
 \begin{figure}[H]
     \includegraphics[width=16cm]{Images/Q4/fluidsim.png}
@@ -52,12 +51,6 @@ and necessary modifications are proposed to optimize system performance.
     \caption{Fluidsim for the cargo elevator}
     \label{fig:fluidsim}
 \end{figure}
-
-The complete implementation of the control system in FluidSim 3.6 is shown here. The design includes two OR gates, 
-allowing both control buttons to be used as needed. The emergency buttons (one pneumatic and one electropneumatic) 
-are also visible. Due to software constraints, the circuit controlling the light and buzzer had to be duplicated, as 
-each pneumatic-to-electrical converter could only be connected to a single differential pressure switch—one for the 
-opening motion and another for closing.\\
 
 \subsection{Conclusion}
 

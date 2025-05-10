@@ -19,33 +19,7 @@ Fluidsim 3.6 to verify that it meets the operational specifications. Through thi
 of electromagnetic technology applied to industrial control systems are reinforced, with emphasis on safety, 
 responsiveness, and process reliability.
 
-\subsection{Process Schematic and Sensor-Actuator Integration} \label{sec:Process_Schematic_and_Sensor-Actuator_Integration}
-
-The first step in the system design is to create a eletrical circuit representation of the process, 
-illustrating the placement of sensors and actuators. This diagram serves as a foundational blueprint 
-for the entire control system. The schematic includes the necessary cylinders, valves, and control 
-components to facilitate automation.
-
-\begin{figure}[H]
-    \includegraphics[width=16cm]{Images/Q2/eletrical_circuit.png}
-    \centering
-    \caption{Decided schematic for the door control}
-    \label{fig:eletrical_circuit}
-\end{figure}
-
-
-This schematic\ref{fig:eletrical_circuit} illustrates the design of a double-cylinder door mechanism. Both Buttons B1 and B2 
-can be used to open the door, which remains open for approximately five seconds after the button is 
-released. Additionally, two emergency buttons (B3 and B0) are included—one pneumatic and the other 
-electropneumatic—to disconnect the compressor in case of an emergency.
-
 \subsection{Grafcet Representation} \label{sec:Grafcet_Representation}
-
-A structured graphical representation of the automation sequence is developed using the 
-Grafcet method. This step-by-step graphical model illustrates the transitions between 
-different states of the system, ensuring a clear understanding of the control logic.
-
-This first model is a simple user view of the grafset
 
 \begin{figure}[H]
     \includegraphics[width=16cm]{Images/Q2/grafset_simple.png}
@@ -62,6 +36,39 @@ The second model is a more complex grafset representing the real actuators/conta
     \caption{Grafset for the door control}
     \label{fig:grafset_complex}
 \end{figure}
+
+\subsection{Process Schematic and Sensor-Actuator Integration} \label{sec:Process_Schematic_and_Sensor-Actuator_Integration}
+
+\begin{figure}[H]
+    \includegraphics[width=16cm]{Images/Q2/eletrical_circuit.png}
+    \centering
+    \caption{Decided schematic for the door control}
+    \label{fig:eletrical_circuit}
+\end{figure}
+
+\subsection{Electrical Power Circuit Diagram} \label{sec:Electrical_Power_Circuit_Diagram}
+
+\begin{comment}
+    NOTA: ACRESCENTAR A FIGURA
+    \begin{figure}[H]
+    \includegraphics[width=16cm]{Images/Q2/eletrical_circuit.png}
+    \centering
+    \caption{Decided schematic for the door control}
+    \label{fig:eletrical_circuit}
+\end{figure}
+\end{comment}
+
+\subsection{Electrical Command Circuit Diagram} \label{sec:Electrical_Command_Circuit_Diagram}
+
+\begin{comment}
+    NOTA: ACRESCENTAR A FIGURA
+    \begin{figure}[H]
+    \includegraphics[width=16cm]{Images/Q2/eletrical_circuit.png}
+    \centering
+    \caption{Decided schematic for the door control}
+    \label{fig:eletrical_circuit}
+\end{figure}
+\end{comment}
 
 \subsection{Simulation and Validation} \label{sec:Simulation_and_Validation}
 
